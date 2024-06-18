@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:background="@drawable/backgroundcarma">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:srcCompat="@mipmap/imagen1"
+        android:layout_gravity="center"
+        android:layout_marginTop="85dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CarMa"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="#F8F8F8"
+        android:textSize="60sp"
+
+        android:fontFamily="@font/robotoblackitalic"
+        />
+
+    <EditText
+        android:id="@+id/et_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_input"
+        android:hint="Correo Electronico"
+        android:padding="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/l_primary_dark"
+        android:textColorHint="@color/l_primary"
+        />
+
+    <TextView
+        android:id="@+id/tv_registroCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿No tiene una cuenta? Registre aqui"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#F8F8F8"
+        android:textSize="15sp"
+        android:fontFamily="@font/robotoblackitalic"
+        android:textStyle="bold"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/custom_input">
+
+        <EditText
+            android:id="@+id/et_contra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:drawableEnd="@drawable/ic_ojo_cerrado"
+            android:drawableTint="@color/l_primary"
+            android:inputType="textPassword"
+            android:textColor="@color/l_primary_dark"
+            android:paddingStart="0dp"
+            android:textColorHint="@color/l_primary"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ingreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/l_accent"
+        android:text="INGRESAR"
+        android:backgroundTint="@color/l_primary_dark"
+        />
+
+    <TextView
+        android:id="@+id/tv_recuperarContra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Olvido su contraseña?"
+        android:layout_marginTop="110dp"
+        android:gravity="center"
+        android:textColor="#F8F8F8"
+        android:textSize="15sp"
+        android:fontFamily="@font/robotoblackitalic"
+        />
+
+</LinearLayout>

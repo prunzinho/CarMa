@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="l_primary">#607D8B</color>
+    <color name="l_primary_dark">#37474F</color>
+    <color name="l_accent">#CFD8DC</color>
+
+    <color name="azul_sender">#37474F</color>
+    <color name="azul_receiver">#455A64</color>
+    <color name="azul_chat">#607D8B</color>
+    <color name="btn_envio_mensaje">#CFD8DC</color>
+    <color name="nombre_usuario">#CFD8DC</color>
+
+</resources>

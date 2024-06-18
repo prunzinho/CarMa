@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/l_primary_dark"
+    tools:context=".BusquedaActivity">
+
+    <ImageView
+        android:id="@+id/img_carma"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:background="@mipmap/imagen1"/>
+
+    <TextView
+        android:id="@+id/tv_titulo_busqueda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/l_accent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_toRightOf="@id/img_carma"
+        android:text="Buscar"/>
+
+    <ScrollView
+        android:id="@+id/sv_busqueda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_menu_nav"
+        android:paddingTop="25dp"
+        android:background="@drawable/rounded_corners_busqueda_ll_1"
+        android:layout_below="@+id/tv_titulo_busqueda">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/l_primary"
+            android:orientation="vertical">
+
+            <!-- Marca y Modelo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/l_accent"
+                android:textSize="18dp"
+                android:text="Marca"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/l_primary_dark"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- marca VW -->
+                    <LinearLayout
+                        android:id="@+id/ll_marca_vw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/rounded_corners_busqueda_marca"
+                        android:layout_marginEnd="10dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/ic_volkswagen"/>
+
+                        <TextView
+                            android:id="@+id/tv_marca_vw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Volkswagen"
+                            android:textColor="@color/l_primary_dark"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- marca Chevrolet -->
+                    <LinearLayout
+                        android:id="@+id/ll_marca_chevrolet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/rounded_corners_busqueda_marca"
+                        android:layout_marginEnd="10dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/ic_chevrolet"/>
+
+                        <TextView
+                            android:id="@+id/tv_marca_chevrolet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Chevrolet"
+                            android:textColor="@color/l_primary_dark"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- marca Ford -->
+                    <LinearLayout
+                        android:id="@+id/ll_marca_ford"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/rounded_corners_busqueda_marca"
+                        android:layout_marginEnd="10dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/ic_ford"/>
+
+                        <TextView
+                            android:id="@+id/tv_marca_ford"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Ford"
+                            android:textColor="@color/l_primary_dark"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- marca Ford -->
+                    <LinearLayout
+                        android:id="@+id/ll_marca_nissan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/rounded_corners_busqueda_marca"
+                        android:layout_marginEnd="10dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/ic_nissan"/>
+
+                        <TextView
+                            android:id="@+id/tv_marca_nissan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Nissan"
+                            android:textColor="@color/l_primary_dark"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Año -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/l_accent"
+                android:textSize="18dp"
+                android:text="Año"
+                android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/l_primary_dark"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <!-- Spinner para seleccionar el año -->
+            <Spinner
+                android:id="@+id/spinner_anio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+            <!-- Transmisión -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/l_accent"
+                android:textSize="18dp"
+                android:text="Tipo de Transmisión"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/l_primary_dark"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <!-- Spinner para seleccionar el año -->
+                <Spinner
+                    android:id="@+id/spinner_transmision"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <!-- Combustible -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/l_accent"
+                android:textSize="18dp"
+                android:text="Tipo de Combustible"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/l_primary_dark"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <!-- Spinner para seleccionar el año -->
+                <Spinner
+                    android:id="@+id/spinner_combustible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+
+            <!-- Precio -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/l_accent"
+                android:textSize="18dp"
+                android:text="Precio"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/l_primary_dark"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_min_precio"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corners_busqueda_marca"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:text="Alguna"
+                        android:textColor="@color/l_primary_dark"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:textColor="@color/l_accent"/>
+
+                    <TextView
+                        android:id="@+id/tv_max_precio"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corners_busqueda_marca"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:text="Alguna"
+                        android:textColor="@color/l_primary_dark"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+
+                <com.google.android.material.slider.RangeSlider
+                    android:id="@+id/range_slider_precio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:valueFrom="0"
+                    android:valueTo="700000"
+                    app:thumbColor="@color/l_primary"
+                    app:haloColor="@color/l_accent"
+                    app:trackColorActive="@color/l_primary"
+                    app:trackColorInactive="@color/l_accent"
+                    app:tickColor="@color/l_accent"
+                    app:labelBehavior="gone"
+                    app:values="@array/rangeSlider_precio"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <!-- Km -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/l_accent"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18dp"
+                android:text="Km"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/l_primary_dark"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_min_km"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corners_busqueda_marca"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Alguna"
+                    android:textColor="@color/l_primary_dark"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textColor="@color/l_accent"/>
+
+                <TextView
+                    android:id="@+id/tv_max_km"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corners_busqueda_marca"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Alguna"
+                    android:textColor="@color/l_primary_dark"
+                    android:gravity="center"/>
+
+                </LinearLayout>
+
+                <com.google.android.material.slider.RangeSlider
+                    android:id="@+id/range_slider_km"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:valueFrom="0"
+                    android:valueTo="300000"
+                    app:thumbColor="@color/l_primary"
+                    app:haloColor="@color/l_accent"
+                    app:trackColorActive="@color/l_primary"
+                    app:trackColorInactive="@color/l_accent"
+                    app:tickColor="@color/l_accent"
+                    app:labelBehavior="gone"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    app:values="@array/rangeSlider_km"
+                    />
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <!-- Ubicación -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/l_accent"
+                android:textSize="18dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Ubicación"
+                android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/l_primary_dark"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <!-- Spinner para seleccionar el país -->
+            <Spinner
+                android:id="@+id/spinnerPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Spinner para seleccionar el estado -->
+            <Spinner
+                android:id="@+id/spinnerEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Spinner para seleccionar el municipio -->
+            <Spinner
+                android:id="@+id/spinnerMunicipio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/l_primary_dark"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+
+                <Button
+                    android:id="@+id/btn_buscar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rounded_corners_menu_nav"
+                    android:textColor="@color/l_accent"
+                    android:text="Buscar"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_menu_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/l_primary_dark"
+        >
+
+        <ImageView
+            android:id="@+id/iv_nav_inicio"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_home"
+            android:tint="@color/l_accent"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corners_menu_nav">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_lupa"
+                android:tint="@color/l_accent"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/iv_nav_perfil"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_cuenta"
+            android:tint="@color/l_accent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_nav_chats"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_mensaje"
+            android:tint="@color/l_accent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_nav_venta"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_carro"
+            android:tint="@color/l_accent"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

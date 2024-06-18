@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/l_primary_dark"
+    tools:context=".CrearPublicacionActivity">
+
+    <ImageView
+        android:id="@+id/img_carma"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:background="@mipmap/imagen1"/>
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/l_accent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_toRightOf="@id/img_carma"
+        android:text="Publicación"/>
+
+    <ScrollView
+        android:id="@+id/sv_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_menu_nav"
+        android:layout_below="@+id/tv_titulo"
+        android:paddingTop="25dp"
+        android:background="@drawable/rounded_corners_busqueda_ll_1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="60dp"
+            android:background="@drawable/rounded_corners_busqueda_marca"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+
+                android:text="Seleccione tus fotografias"
+                android:textStyle="bold"
+                android:textColor="@color/l_primary_dark"
+                android:textSize="20sp"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_fotografia_diagonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_fotografia_diagonal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_foto"
+                    android:tint="@color/l_primary_dark"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fotografía Diagonal"
+                    android:textColor="@color/l_primary_dark"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fotografia_frente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_fotografia_frente"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_foto"
+                    android:tint="@color/l_primary_dark"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fotografía de frente"
+                    android:textColor="@color/l_primary_dark"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fotografia_lado_derecho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_fotografia_lado_derecho"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_foto"
+                    android:tint="@color/l_primary_dark"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fotografía lado derecho"
+                    android:textColor="@color/l_primary_dark"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fotografia_lado_izquierdo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_fotografia_lado_izquierdo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_foto"
+                    android:tint="@color/l_primary_dark"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fotografía lado izquierdo"
+                    android:textColor="@color/l_primary_dark"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fotografia_atras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_fotografia_atras"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_foto"
+                    android:tint="@color/l_primary_dark"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fotografía de atras"
+                    android:textColor="@color/l_primary_dark"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+
+                android:text="Datos del Carro"
+                android:textStyle="bold"
+                android:textColor="@color/l_primary_dark"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Marca:"
+                android:textStyle="bold"
+                android:textColor="@color/l_primary_dark"
+                android:textSize="16sp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/rounded_corners_l_primary_dark"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- marca VW -->
+                    <LinearLayout
+                        android:id="@+id/ll_marca_vw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/rounded_corners_busqueda_marca"
+                        android:layout_marginEnd="10dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/ic_volkswagen"/>
+
+                        <TextView
+                            android:id="@+id/tv_marca_vw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Volkswagen"
+                            android:textColor="@color/l_primary_dark"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- marca Chevrolet -->
+                    <LinearLayout
+                        android:id="@+id/ll_marca_chevrolet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/rounded_corners_busqueda_marca"
+                        android:layout_marginEnd="10dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/ic_chevrolet"/>
+
+                        <TextView
+                            android:id="@+id/tv_marca_chevrolet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Chevrolet"
+                            android:textColor="@color/l_primary_dark"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- marca Ford -->
+                    <LinearLayout
+                        android:id="@+id/ll_marca_ford"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/rounded_corners_busqueda_marca"
+                        android:layout_marginEnd="10dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/ic_ford"/>
+
+                        <TextView
+                            android:id="@+id/tv_marca_ford"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Ford"
+                            android:textColor="@color/l_primary_dark"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- marca Nissan -->
+                    <LinearLayout
+                        android:id="@+id/ll_marca_nissan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/rounded_corners_busqueda_marca"
+                        android:layout_marginEnd="10dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/ic_nissan"/>
+
+                        <TextView
+                            android:id="@+id/tv_marca_nissan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Nissan"
+                            android:textColor="@color/l_primary_dark"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Modelo:"
+                android:textStyle="bold"
+                android:textColor="@color/l_primary_dark"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/et_modelo_carro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:hint=""
+                android:textColorHint="@color/l_accent"
+                android:textColor="@color/l_accent"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:inputType="textCapWords"
+                android:background="@drawable/rounded_corners_l_primary_dark"
+                android:padding="8dp"
+                android:paddingStart="20dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Precio:"
+                android:textStyle="bold"
+                android:textColor="@color/l_primary_dark"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/et_precio_carro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:hint="$"
+                android:textColorHint="@color/l_accent"
+                android:textColor="@color/l_accent"
+                android:inputType="numberDecimal"
+                android:background="@drawable/rounded_corners_l_primary_dark"
+                android:padding="8dp"
+                android:paddingStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Kilometraje:"
+                android:textStyle="bold"
+                android:textColor="@color/l_primary_dark"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/et_km_carro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Km"
+                android:textColorHint="@color/l_accent"
+                android:textColor="@color/l_accent"
+                android:inputType="numberDecimal"
+                android:background="@drawable/rounded_corners_l_primary_dark"
+                android:padding="8dp"
+                android:paddingStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Año:"
+                android:textStyle="bold"
+                android:textColor="@color/l_primary_dark"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_anio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded_corners_l_primary_dark"
+                android:padding="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Tipo de Transmisión:"
+                android:textStyle="bold"
+                android:textColor="@color/l_primary_dark"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_transmision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:padding="8dp"
+                android:background="@drawable/rounded_corners_l_primary_dark"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Tipo de Combustible:"
+                android:textStyle="bold"
+                android:textColor="@color/l_primary_dark"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_combustible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:padding="8dp"
+                android:background="@drawable/rounded_corners_l_primary_dark"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+
+                android:text="Ubicación"
+                android:textStyle="bold"
+                android:textColor="@color/l_primary_dark"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="País:"
+                android:textStyle="bold"
+                android:textColor="@color/l_primary_dark"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:padding="8dp"
+                android:background="@drawable/rounded_corners_l_primary_dark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Estado:"
+                android:textStyle="bold"
+                android:textColor="@color/l_primary_dark"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:padding="8dp"
+                android:background="@drawable/rounded_corners_l_primary_dark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Municipio:"
+                android:textStyle="bold"
+                android:textColor="@color/l_primary_dark"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerMunicipio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:padding="8dp"
+                android:background="@drawable/rounded_corners_l_primary_dark"/>
+
+
+            <Button
+                android:id="@+id/btn_crear_publicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="0dp"
+                android:textColor="@color/l_accent"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:backgroundTint="@color/l_primary_dark"
+                android:text="Crear publicación"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_menu_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/l_primary_dark"
+        >
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_nav_inicio"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_home"
+            android:tint="@color/l_accent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_nav_busqueda"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_lupa"
+            android:tint="@color/l_accent"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_nav_perfil"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_cuenta"
+            android:tint="@color/l_accent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_nav_chats"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_mensaje"
+            android:tint="@color/l_accent"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corners_menu_nav">
+
+            <ImageView
+                android:id="@+id/iv_nav_venta"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_carro"
+                android:tint="@color/l_accent"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

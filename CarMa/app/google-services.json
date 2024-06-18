@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "914209032850",
+    "project_id": "proyecto-kotlin-9568f",
+    "storage_bucket": "proyecto-kotlin-9568f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914209032850:android:1382cd2ff9b0907b13f44b",
+        "android_client_info": {
+          "package_name": "mx.uv.carma"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlAhjn8ZRwZ1urGvctLAuTWp8l_Cl9B-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

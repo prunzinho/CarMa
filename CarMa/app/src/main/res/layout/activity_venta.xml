@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/l_primary_dark"
+    tools:context=".VentaActivity">
+
+    <ImageView
+        android:id="@+id/img_carma"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:background="@mipmap/imagen1"/>
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/l_accent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_toRightOf="@id/img_carma"
+        android:text="Venta"/>
+
+    <ScrollView
+        android:id="@+id/sv_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_menu_nav"
+        android:layout_below="@+id/tv_titulo"
+        android:paddingTop="25dp"
+        android:background="@drawable/rounded_corners_busqueda_ll_1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/l_primary"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_img_perfil_usuario"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_perfil"
+                    android:alpha="0.5"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_saludo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Hola"
+                    android:textColor="@color/l_accent"
+                    android:textSize="30sp"
+                    android:layout_toRightOf="@+id/iv_img_perfil_usuario"/>
+
+                <TextView
+                    android:id="@+id/tv_nombre_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Usuario"
+                    android:textColor="@color/l_accent"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/iv_img_perfil_usuario"
+                    android:layout_below="@id/tv_saludo"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_crear_publicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners_l_primary_dark"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crear Publicación"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textSize="26sp"
+                    android:textColor="@color/l_accent" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_publicacion"
+                    android:tint="@color/l_accent"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_editar_publicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners_l_primary_dark"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Editar Publicación"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textSize="26sp"
+                    android:textColor="@color/l_accent" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_editar"
+                    android:tint="@color/l_accent"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_agendar_cita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners_l_primary_dark"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Citas"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textSize="26sp"
+                    android:textColor="@color/l_accent" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_anio"
+                    android:tint="@color/l_accent"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_menu_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/l_primary_dark"
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_nav_inicio"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_home"
+            android:tint="@color/l_accent"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_nav_busqueda"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_lupa"
+            android:tint="@color/l_accent"
+            />
+
+
+
+            <ImageView
+                android:id="@+id/iv_nav_perfil"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_cuenta"
+                android:tint="@color/l_accent"
+                />
+
+        <ImageView
+            android:id="@+id/iv_nav_chats"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_mensaje"
+            android:tint="@color/l_accent"
+            />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_corners_menu_nav">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_carro"
+            android:tint="@color/l_accent"
+            />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

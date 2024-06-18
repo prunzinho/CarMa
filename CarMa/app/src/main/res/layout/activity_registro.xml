@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundregistro"
+    tools:context=".RegistroActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:textColor="#F8F8F8"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/robotoitaliclight" />
+
+    <EditText
+        android:id="@+id/et_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_input"
+        android:hint="Correo Electronico"
+        android:padding="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/l_primary_dark"
+        android:textColorHint="@color/l_primary"
+        />
+
+    <EditText
+        android:id="@+id/et_nombre_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_input"
+        android:hint="Nombre de Usuario"
+        android:padding="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/l_primary_dark"
+        android:textColorHint="@color/l_primary"
+
+        />
+
+
+        <TextView
+
+            android:id="@+id/dateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_input"
+            android:hint="Dia de nacimiento"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:paddingStart="15dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+
+
+            android:textColor="@color/l_primary_dark"
+            android:textColorHint="@color/l_primary"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/custom_input">
+
+        <EditText
+            android:id="@+id/et_contra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:drawableEnd="@drawable/ic_ojo_cerrado"
+            android:drawableTint="@color/l_primary"
+            android:inputType="textPassword"
+            android:textColor="@color/l_primary_dark"
+            android:paddingStart="0dp"
+            android:textColorHint="@color/l_primary"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:backgroundTint="@color/l_primary_dark"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="20dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        android:text="REGISTRARSE"
+        android:layout_gravity="center"
+        android:textColor="@color/l_accent"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_inicioMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Ya tienes una cuenta? Inicia Sesion"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textColor="#F8F8F8"
+        android:textSize="15sp"
+        android:fontFamily="@font/robotoitaliclight"
+        />
+
+</LinearLayout>
